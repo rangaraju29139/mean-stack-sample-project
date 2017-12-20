@@ -1,0 +1,16 @@
+{
+  "name": "bujji",
+  "version": "1.0.0",
+  "description": "",
+  "main": "get.js",
+  "dependencies": {
+    "nodemailer": "^4.0.1",
+    "pm2-server-monit": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

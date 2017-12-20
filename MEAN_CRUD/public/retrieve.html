@@ -1,0 +1,35 @@
+<div ng-controller="retrievectrl">
+<div class="collapse navbar-collapse" id="headbar">
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Employee Dashboard</a>
+    </div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="whiteText" href="#/create">Create<span></a></li>
+					<li><a class="whiteText" href="#/retrieve">Retrieve</a></li>
+					<li><a class="whiteText" href="#/delete">Delete</a></li>
+				</ul>
+</nav>
+</div>
+<center>
+<h1>Retrieve page</h1>
+		 <input type="text" ng-model="email" placeholder="Enter Email Address"><br>
+			<div>
+				<input type="submit" value="retrieve" ng-click="retrieve()" class="btn btn-md"><br>
+			</div>
+		<div ng-repeat="x in res">
+		
+			<input type="text" ng-model="x.Name" ng-value="x.Name">
+			<br>
+			<input type="text" ng-model="x.empid" ng-value="x.empid">
+			<br>
+			<input type="email" ng-model="x.email" ng-value="x.email">
+			<br>
+			<input type="text" ng-model="x.salary" ng-value="x.salary">
+			<br>
+			<button value="update" ng-click="update(x)" class="btn btn-md">update</button>
+			</div>
+			
+	</center>		
+</div>

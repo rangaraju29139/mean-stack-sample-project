@@ -1,0 +1,39 @@
+<div ng-controller="CreateCtrl">
+<div class="collapse navbar-collapse" id="headbar">
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Employee Dashboard</a>
+    </div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="whiteText" href="#/create">Create<span></a></li>
+					<li><a class="whiteText" href="#/retrieve">Retrieve</a></li>
+					<li><a class="whiteText" href="#/delete">Delete</a></li>
+				</ul>
+</nav>
+</div>
+<h1>Create Page</h1>
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="text" ng-model="name" placeholder="name">
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="text" ng-model="empid" placeholder="Enter EmpId">
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="email" ng-model="email" placeholder="Enter email">
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="text" ng-model="salary" placeholder="Enter salary">
+			</div>
+		</div>
+		<div class="form-group row">
+			<input type="submit" value="create" ng-click="insert()" class="btn btn-md">
+		</div>
+</div>
